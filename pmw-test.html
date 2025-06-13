@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osto Property Management</title>
+    <!-- Meta Names for SEO -->
+    <meta name="description" content="Osto Property Management offers expert property management services in Space Coast, FL, for residential, multi-family, and vacation homes.">
+    <meta name="keywords" content="property management, Space Coast, Florida, rental properties, real estate">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Osto Property Management - Space Coast, FL">
+    <meta property="og:description" content="Expert property management services for residential, multi-family, and vacation homes in Space Coast, FL.">
+    <meta property="og:image" content="/media/logo.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Preload critical resources to prioritize their loading: -->
+    <link rel="preload" href="/media/logo.png" as="image">
+    <link rel="preload" href="/media/banner.jpg" as="image">
+    <style>
+    :root {
+        --bs-body-font-family: 'Archivo', sans-serif;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .container-fluid {
+      max-width: 2000px;
+    }
+    .navbar-nav .nav-link {
+      font-size: 12px;
+    }
+    .banner-section {
+      height: 80vh;
+      background: url('/media/banner.jpg') center center/cover no-repeat;
+      position: relative;
+      overflow: hidden;
+    }
+    .banner-gradient {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 100) 0%, rgba(54,81,108,0.0) 60%);
+      z-index: 1;
+    }
+    .banner-content {
+      z-index: 2;
+    }
+    .banner-section{
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+    }
+    .text-sub {
+      font-size: 15px;
+      color: #36516C;
+    }
+    .property-heading {
+      font-size: 30px;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      color: #36516C; 
+    }
+    .property-img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+    }
+    .services-section {
+      padding: 10px 0;
+      background-color: #F6E5D9;
+    }
+    .service-card {
+      background-color: #FFFFFF;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .services-text {
+      font-size: 11px;
+      color: #36516C;
+    }
+    .trends-text {
+      font-size: 10px;
+      color: #36516C;
+    }
+    .header-services {
+      font-size: 20px;
+      color: #36516C;
+    }
+    .header-trends {
+      font-size: 15px;
+      color: #36516C;
+    }
+    .rental-analysis-banner {
+      width: 100%;
+      height: 500px;
+      min-height: 500px;
+      position: relative;
+    }
+
+    .rental-analysis-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .rental-gradient,
+    .rental-desc {
+      background: linear-gradient(to left, #36516C 10%, rgba(54,81,108,0) 100%);
+      right: 0;
+      left: auto;
+    }
+
+    @media (max-width: 768px) {
+      .rental-gradient,
+      .rental-desc {
+        width: 90%;
+        right: 0;
+        left: auto;
+      }
+      .rental-desc {
+        text-align: left;
+        align-items: flex-start;
+        padding: 2rem 1rem;
+      }
+    }
+    .trends-section {
+      background: url('/media/pre-footer.jpg') center center/cover no-repeat;
+      position: relative;
+      overflow: hidden; 
+      min-height: 100vh;
+    }
+
+    .trends-gradient {
+      height: 40%;
+      background: linear-gradient(to top, rgba(255, 255, 255, 0.7) 90%, rgba(54,81,108,0) 100%);
+      pointer-events: none;
+    }
+    .btn-orange {
+      background-color: #E57D5D;
+      border: none;
+    }
+    .btn-orange:hover, .btn-orange:focus {
+      background-color: #E57D5D;
+      color: #fff;
+    }
+    .trends-card {
+      background-color: #FFFFFF;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 20px;
+    }
+    .small {
+      font-size: 10px;
+    }
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid d-flex align-items-center">
+        <a class="navbar-logo me-5 px-3" href="#">
+          <img src="/media/logo.png" loading="lazy" alt="OPM Logo" width="120" height="70" class="d-inline-block align-text-top mt-1 ms-2" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav flex-grow-1 justify-content-center mx-auto">
+              <li class="nav-item"><a class="nav-link px-3" style="color:#36516C" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link px-3" style="color:#36516C" href="#">Owners</a></li>
+              <li class="nav-item"><a class="nav-link px-3" style="color:#36516C" href="#">Tenants</a></li>
+              <li class="nav-item"><a class="nav-link px-3" style="color:#36516C" href="#">Agents</a></li>
+              <li class="nav-item"><a class="nav-link px-3" style="color:#36516C" href="#">Locations</a></li>
+              <li class="nav-item"><a class="nav-link px-3" style="color:#36516C" href="#">Search Rentals</a></li>
+              <li class="nav-item"><a class="nav-link px-3" style="color:#36516C" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link px-3" style="color:#36516C" href="#">Login</a></li>
+            </ul>
+      
+            <span class="navbar-text fw-bold me-5" style="color:#36516C">321.414.8871</span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner-section position-relative text-center d-flex flex-column">
+        <div class="banner-gradient position-absolute top-0 start-0 w-100 h-100"></div>
+          <div class="banner-content position-relative">
+            <h1 class="fw-normal display-5" style="color:#36516C">Space Coast Property Management, Perfected.</h1>
+          <p class="text-sub fs-5" style="color:#36516C">We Eliminate the Stress of Property Ownership</p>
+          </div>
+      </div>
+  <!-- Property Types Component -->
+    <div class="banner-content position-relative text-center mt-5">
+      <h2 class="property-heading mb-5">We Manage All Types Of Properties</h2>
+      <div class="row justify-content-center g-4 mb-5">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+          <img src="/media/residential.jpg" loading="lazy" class="rounded-circle property-img mb-2" alt="Residential" width="100" height="100">
+          <div class="fw-normal mt-2" style="color:#36516C">Residential</div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+          <img src="/media/multi-family.jpg" loading="lazy" class="rounded-circle property-img mb-2" alt="Commercial" width="100" height="100">
+          <div class="fw-normal mt-2" style="color:#36516C">Multi-Family</div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+          <img src="/media/vacant-home-management.jpg" loading="lazy" class="rounded-circle property-img mb-2" alt="Vacation" width="100" height="100">
+          <div class="fw-normal mt-2" style="color:#36516C">Vacation Home Management</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+     <div class="services-section position-relative text-center">
+      <h2 class="property-heading">As Your Space Coast Property Manager,</h2>
+      <p class="text-sub fw-normal">We Take Care of Everything</p>
+        <div class="container my-5">
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <div class="service-card p-4 rounded-4 h-100 text-start shadow-sm">
+                <h4 class="header-services mb-3 mt-3">Marketing</h4>
+                <p class="services-text">Marketing is key to successful rentals. We provide an expert market analysis for each property we manage to maximize your return on investment.</p>
+                <div class="d-flex justify-content-end mt-3">
+                  <a href="#" class="learn-more-link fw-semibold text-primary text-decoration-none">Learn more &gt;</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="service-card p-4 rounded-4 h-100 text-start shadow-sm">
+                <h4 class="header-services mb-3 mt-3">Screening</h4>
+                <p class="services-text">We conduct extensive screening on all tenants and handle every aspect of getting your investment rented in the shortest time possible.</p>
+                <div class="d-flex justify-content-end mt-3">
+                  <a href="#" class="learn-more-link fw-semibold text-primary text-decoration-none">Learn more &gt;</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="service-card p-4 rounded-4 h-100 text-start shadow-sm">
+                <h4 class="header-services mb-3 mt-3">Rent Collection</h4>
+                <p class="services-text">We make sure you get paid on time, every time. You no longer have to worry about rent showing up in your bank account because we take care of everything.</p>
+                <div class="d-flex justify-content-end mt-3">
+                  <a href="#" class="learn-more-link fw-semibold text-primary text-decoration-none">Learn more &gt;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+
+     <!-- Rental Analysis -->
+      <div class="rental-analysis-banner position-relative overflow-hidden d-flex align-items-center" style="min-height: 250px;">
+        <img src="/media/rental-analysis.jpg" loading="lazy"alt="Rental Analysis" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0" style="z-index:1;">
+        <div class="rental-gradient position-absolute top-0 end-0 h-100" style="width: 60%; z-index:2;"></div>
+        <div class="rental-desc position-absolute top-0 end-0 h-100 d-flex flex-column justify-content-center text-white p-5" style="z-index:3; width: 50%;">
+          <h3 class="fw-normal mb-4" style="margin-right: 100px;">Owners! Get a No Obligation, <br><span>Free Rental Analysis <em>In Seconds.</em></span></h3>
+          <div class="position-relative d-flex align-items-center" style="width: 100%; max-width: 80%;">
+            <div class="rental-round flex-grow-1 align-items-start justify-content-center text-start p-3 bg-white rounded-pill w-100 w-md-75" style="min-height: 50px;">
+              <input 
+                type="text" 
+                class="form-control border-0 p-0 fs-md-5 fs-lg-4" 
+                placeholder="Enter your rental property address here and we’ll generate your free report." 
+                style="color: #36516C; font-size: 10px; background: transparent; box-shadow: none;"
+              />
+            </div>
+              <span class="send-icon-outside position-absolute d-flex justify-content-center align-items-center"
+                  style="right: 10px; top: 90px; transform: translateY(-50%); width: 48px; height: 48px; background-color: #8c949c; border-radius: 50%; cursor: pointer;">
+              <i class="bi bi-send-fill fs-5" style="color: #FFFFFF;"></i>
+            </span>
+          </div>
+        </div>
+      </div>  
+
+      <!-- News, Tips and Trends -->
+      <div class="trends-section position-relative text-center">
+        <div class="trends-gradient position-absolute bottom-0 start-0 w-100" style="height: 40%; z-index:1;"></div>
+        <div class="position-relative" style="z-index:2;">
+          <h2 class="property-heading">Space Coast Property Management News, Tips & Trends</h2>
+        <p class="text-sub fw-normal">Be The First To Know What’s Going On</p>
+          <div class="container my-5">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="trends-card p-4 rounded-4 h-100 text-start shadow-sm position-relative">
+                  <h4 class="header-trends mb-3 mt-3">3 Ways To Kickstart Your Rental Investment Journey</h4>
+                  <p class="trends-text">
+                    Investing in rental properties can be a lucrative venture, especially in a state like Florida, known for its booming real estate market. However, diving into the world of property investment requires careful planning and execution. Partnering with a reputable Florida property management company such as Osto Property Management can significantly enhance your chances of success.
+                  </p>
+                  <div class="d-flex justify-content-start mt-3 position-absolute" style="bottom: 20px; left: 20px;">
+                    <a href="#" class="btn btn-orange rounded-pill fw-normal text-white" style="font-size: 10px;">
+                      Read Full Blog
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="trends-card p-4 rounded-4 h-100 text-start shadow-sm position-relative">
+                  <h4 class="header-trends mb-3 mt-3">Year-End Maintenance For Your Home</h4>
+                  <p class="trends-text">
+                    We’ve got one that will help you maintain the value of your investment and ensure you are attracting the right tenants for years to come, our comprehensive year-end maintenance guide is designed to help property owners ensure their homes are in optimal condition for the upcoming year. 
+                  </p>
+                  <div class="d-flex justify-content-start mt-3 position-absolute" style="bottom: 20px; left: 20px;">
+                    <a href="#" class="btn btn-orange rounded-pill fw-normal text-white" style="font-size: 10px;">
+                      Read Full Blog
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="trends-card p-4 rounded-4 h-100 text-start shadow-sm position-relative">
+                  <h4 class="header-trends mb-3 mt-3">The Benefits Of Professional Property Management During The Holidays</h4>
+                  <p class="trends-text">
+                    Picture it… Clark Griswold style, dealing with problems left and right during a time that should be full of joy, celebration, and togetherness for landlords and tenants alike. Tenants and Homeowners both deserve a stress-free holiday. This is where professional property management services shine, offering invaluable support during this hectic time of year. Let's explore how property management can relieve stress for both landlords and tenants during the holiday season.
+                  </p>
+                  <div class="d-flex justify-content-start mt-3 position-absolute" style="bottom: 20px; left: 20px;">
+                    <a href="#" class="btn btn-orange rounded-pill fw-normal text-white" style="font-size: 10px;">
+                      Read Full Blog
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="trends-card p-4 rounded-4 h-100 text-start shadow-sm position-relative">
+                  <h4 class="header-trends mb-3 mt-3">Safely Preparing For Halloween in your community</h4>
+                  <p class="trends-text">
+                    Halloween is a time for fun and festivities, but it's also important to prioritize safety in your community. At Osto Property Management, ensuring the safety of both our tenants and the property itself is a top priority. In this blog, we share valuable tips to help property owners and tenants safely prepare for an enjoyable Halloween experience.
+                  </p>
+                  <div class="d-flex justify-content-start mt-3 position-absolute" style="bottom: 20px; left: 20px;">
+                    <a href="#" class="btn btn-orange rounded-pill fw-normal text-white" style="font-size: 10px;">
+                      Read Full Blog
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer-section bg-transparent mt-5" style="padding-bottom: 50px;">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <!-- Brand Logo -->
+            <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-start">
+              <img src="/media/logo.png" loading="lazy" alt="Brand Logo" width="120" height="70" class="img-fluid" />
+            </div>
+            <!-- Contact -->
+            <div class="col-12 col-md-2 text-center text-md-start">
+              <h6 class="fw-normal mb-3" style="color: #E57D5D;">Contact</h6>
+              <div class="small">Phone: (321) 294-2276<br>Fax: (321) 294-2279</div>
+            </div>
+            <!-- Corporate Mailing Address -->
+            <div class="col-12 col-md-2 text-center text-md-start">
+              <h6 class="fw-normal mb-3" style="color: #E57D5D;">Corporate Mailing</h6>
+              <div class="small">1413 S Patrick Drive Suite 2<br>Indian Harbour Beach, FL 32937</div>
+            </div>
+            <!-- Palm Beach Address -->
+            <div class="col-12 col-md-3 text-center text-md-start">
+              <h6 class="fw-normal mb-3" style="color: #E57D5D;">Palm Beach</h6>
+              <div class="small">1375 Gateway Blvd.<br>Boynton Beach, FL 33426</div>
+            </div>
+            <!-- Login -->
+            <div class="col-12 col-md-1 text-center text-md-start">
+              <a href="#" class="fw-normal text-decoration-none" style="color: #E57D5D;">Login</a>
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-2">
+                <i class="bi bi-unlock-fill me-2" style="color: #36516C;"></i>
+                <a href="#" class="text-decoration-none small text-nowrap" style="color: #36516C;">Owner Login</a>
+              </div>
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-1">
+                <i class="bi bi-unlock-fill me-2" style="color: #36516C;"></i>
+                <a href="#" class="text-decoration-none small text-nowrap" style="color: #36516C;">Resident Login</a>
+              </div>
+            </div>
+            <!-- Social -->
+            <div class="col-12 col-md-2 d-flex flex-column align-items-center gap-2 justify-content-center">
+              <h6 class="fw-normal mb-3" style="color: #E57D5D;">Social</h6>
+              <div class="d-flex gap-3">
+                <a href="#" class="fs-5" style="color: #36516C;"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="fs-5" style="color: #36516C;"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
